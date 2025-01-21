@@ -3,6 +3,7 @@ FROM oven/bun:${VARIANT}
 
 RUN apt-get update \
     && apt-get -y install --no-install-recommends \
+    ca-certificates \
     git \
     nano \
     vim-tiny \
